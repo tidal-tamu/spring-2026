@@ -13,13 +13,13 @@ The public website for [www.tidaltamu.com](https://www.tidaltamu.com)
 Clone the repository
 
 ```bash
-git clone https://github.com/tidal-tamu/club-website.git
+git clone https://github.com/tidal-tamu/spring-2026.git
 ```
 
 Enter the project
 
 ```bash
-cd club-website
+cd spring-2026
 ```
 
 Install the required dependencies
