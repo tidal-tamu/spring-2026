@@ -7,6 +7,8 @@ import {
     FaDiscord,
 } from "react-icons/fa";
 
+const MAIN_SITE = "https://tidaltamu.com";
+
 type NavLink = {
     title: string;
     path: string;
@@ -15,7 +17,6 @@ type NavLink = {
 };
 
 const navLinks: NavLink[] = [
-    { title: "Home", path: "/hackathon", isExternal: true },
     { title: "About", path: "about", isExternal: false },
     { title: "Schedule", path: "schedule", isExternal: false },
     { title: "Prizes", path: "prizes", isExternal: false },
@@ -71,7 +72,7 @@ export default function Navbar({ dark = false, onMenuToggle, shouldAnimate = fal
         >
             <div className="w-full px-6 lg:pl-12 lg:pr-28 py-10 flex items-center justify-between">
                 <motion.a
-                    href="/"
+                    href={MAIN_SITE}
                     className="flex items-center !cursor-pointer z-50"
                     initial={{ opacity: 0 }}
                     animate={shouldAnimate ? { opacity: 1 } : { opacity: 0 }}

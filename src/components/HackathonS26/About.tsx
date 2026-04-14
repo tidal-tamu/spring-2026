@@ -7,7 +7,6 @@ import {
 import { useRef, useEffect, useState } from "react";
 import ParametricScrollPath from "./ParametricScrollPath";
 import gsap from "gsap";
-import { Link } from "react-router-dom";
 
 type AnimatedCounterProps = {
     from: number;
@@ -352,11 +351,11 @@ const About = () => {
                             sponsors on{" "}
                             <span className="font-bold">Feb. 7-8th!</span> Check
                             out our{" "}
-                            <Link to="/hacker-guide">
+                            <a href="/hacker-guide.pdf">
                                 <span className="font-bold text-[#29608b] hover:text-white transition-colors duration-300">
                                     Hacker Guide
                                 </span>
-                            </Link>{" "}
+                            </a>{" "}
                             for more info.
                         </p>
                     </div>

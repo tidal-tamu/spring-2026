@@ -10,7 +10,8 @@ import FAQs from "./FAQs/FAQs";
 import Footer from "../Footer";
 import LoadingScreen from "./LoadingScreen";
 import "./tidal-effects.css";
-import { Link } from "react-router-dom";
+
+const REGISTER_URL = "https://tidaltamu.com/register";
 
 const HackathonS26 = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -76,8 +77,8 @@ const HackathonS26 = () => {
                             shouldAnimate={shouldAnimate}
                         />
                     </div>
-                    <Link
-                        to="/register"
+                    <a
+                        href={REGISTER_URL}
                         className={`hidden sm:flex absolute right-4 sm:right-8 z-30 !cursor-pointer transition-all duration-200 ${
                             isMobileMenuOpen
                                 ? "opacity-0 pointer-events-none md:opacity-100 md:pointer-events-auto"
@@ -88,14 +89,14 @@ const HackathonS26 = () => {
                         <div className="snowman-container">
                             <img
                                 src="/s26/snowman.png"
-                                alt="Snowman"
+                                alt="Register"
                                 className="w-20 h-20 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 xl:w-44 xl:h-44 object-contain opacity-90 hover:opacity-100 transition-opacity duration-200 block cursor-pointer"
                                 width={176}
                                 height={176}
                                 decoding="async"
                             />
                         </div>
-                    </Link>
+                    </a>
 
                     <div className="relative z-0">
                         <Hero shouldAnimate={shouldAnimate} />
@@ -126,7 +127,7 @@ const HackathonS26 = () => {
                     className="relative z-20"
                     style={{ backgroundColor: "#6fa7cf" }}
                 >
-                    <Footer variant="hackathon-spring-26" />
+                    <Footer />
                 </div>
             </div>
         </>
