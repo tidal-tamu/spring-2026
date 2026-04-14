@@ -1,6 +1,4 @@
-# tidalTAMU Club Website
-
-The public website for [www.tidaltamu.com](https://www.tidaltamu.com)
+# tidalTAMU: Spring 2026 Hackathon
 
 ## Tech Stack
 - Vite
@@ -49,5 +47,3 @@ git push
 ```
 
 Make a pull request to merge your branch with main!
-
-(Note that pushing to main will update and redeploy the website automatically)
